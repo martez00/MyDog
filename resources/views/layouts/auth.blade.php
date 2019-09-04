@@ -14,11 +14,11 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/main.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/auth.css') }}" rel="stylesheet">
 </head>
 <body>
 <div id="app">
-    @include('partials.header')
+   @yield('content')
 </div>
 <!-- Scripts -->
 <script src="{{ asset('js/app.js') }}" defer></script>

@@ -8,7 +8,7 @@ class LocaleController extends Controller
 {
     public function change($locale)
     {
-        \Session::put('locale', $locale);
+        request()->session()->put('locale', $locale);
         return redirect()->back();
     }
 }
